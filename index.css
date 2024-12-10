@@ -1,0 +1,88 @@
+body {
+    /* background-color: rgb(28, 27, 27); */
+    background-color: darkgrey;
+    /* background-color:deepskyblue; */
+    font-family: "Arial", sans-serif;
+    text-align: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #calender {
+    padding: 10px 50px;
+    margin: 50px;
+    width: 400px;
+    height: auto;
+    background-color: lightgreen;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.6);
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+  }
+  .weeks,
+  #days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+  #days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .day {
+    transition: background-color 0.3s;
+    padding: 5px;
+  }
+  .day:hover {
+    background-color: blue;
+    border-radius: 10%;
+  }
+  .today {
+    border: 1px solid;
+    border-radius: 10%;
+    background-color: darkgoldenrod;
+    color: black;
+  }
+  .weeks p {
+    color: blue;
+    font-weight: bold;
+  }
+  #pre {
+    float: left;
+  }
+  #next {
+    float: right;
+  }
+  #next,
+  #pre {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: darkslategrey;
+    color: white;
+    font-weight: bold;
+  }
+  #pre:hover,
+  #next:hover {
+    background-color: skyblue;
+    color: black;
+  }
+  hr {
+    border-color: grey;
+  }
+  h1 {
+    color: darkmagenta;
+  }
